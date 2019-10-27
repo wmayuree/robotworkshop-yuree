@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.8.0 on win32)" generated="20191027 16:30:45.452" rpa="false">
+<suite id="s1" name="Workshop-Day-1" source="C:\Users\User\eclipse-workspace\Workshop-Day-1">
+<suite id="s1-s1" name="Demo Variable" source="C:\Users\User\eclipse-workspace\Workshop-Day-1\Demo_Variable.robot">
+<test id="s1-s1-t1" name="Demo Dictionary">
+<kw name="Create Dictionary" library="BuiltIn">
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<arguments>
+<arg>username=john1</arg>
+<arg>password=welcome1</arg>
+</arguments>
+<assign>
+<var>&amp;{user1}</var>
+</assign>
+<msg timestamp="20191027 16:30:45.484" level="INFO">&amp;{user1} = { username=john1 | password=welcome1 }</msg>
+<status status="PASS" starttime="20191027 16:30:45.484" endtime="20191027 16:30:45.484"></status>
+</kw>
+<kw name="Create Dictionary" library="BuiltIn">
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<arguments>
+<arg>username=jane2</arg>
+<arg>password=welcome2</arg>
+</arguments>
+<assign>
+<var>&amp;{user2}</var>
+</assign>
+<msg timestamp="20191027 16:30:45.484" level="INFO">&amp;{user2} = { username=jane2 | password=welcome2 }</msg>
+<status status="PASS" starttime="20191027 16:30:45.484" endtime="20191027 16:30:45.484"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${user1.username}</arg>
+</arguments>
+<msg timestamp="20191027 16:30:45.485" level="INFO">john1</msg>
+<status status="PASS" starttime="20191027 16:30:45.485" endtime="20191027 16:30:45.485"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${user2.password}</arg>
+</arguments>
+<msg timestamp="20191027 16:30:45.485" level="INFO">welcome2</msg>
+<status status="PASS" starttime="20191027 16:30:45.485" endtime="20191027 16:30:45.485"></status>
+</kw>
+<doc>abc can explain in many lines
+</doc>
+<tags>
+<tag>Smoketest</tag>
+</tags>
+<status status="PASS" starttime="20191027 16:30:45.483" endtime="20191027 16:30:45.486" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20191027 16:30:45.481" endtime="20191027 16:30:45.487"></status>
+</suite>
+<status status="PASS" starttime="20191027 16:30:45.453" endtime="20191027 16:30:45.493"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0">Smoketest</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Workshop-Day-1">Workshop-Day-1</stat>
+<stat pass="1" fail="0" id="s1-s1" name="Demo Variable">Workshop-Day-1.Demo Variable</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20191027 16:30:45.413" level="WARN">Error in file 'C:\Users\User\eclipse-workspace\Workshop-Day-1\Demo_condition.robot': Invalid syntax in keyword 'Get Student grade based on score': Ignoring lines with only continuation marker '...' is deprecated.</msg>
+</errors>
+</robot>
